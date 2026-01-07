@@ -26,7 +26,7 @@ class Settings(BaseSettings):
     CORS_ORIGINS: List[str] = ["*"]  # En producción usar dominios específicos
     
     # Frontend
-    FRONTEND_URL: str = os.getenv("FRONTEND_URL", "http://localhost:3000")
+    FRONTEND_URL: str = os.getenv("FRONTEND_URL", "https://remarkable-travesseiro-6c06c6.netlify.app/")
     
     class Config:
         env_file = ".env"
